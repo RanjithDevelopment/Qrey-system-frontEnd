@@ -1,0 +1,15 @@
+{
+        category:qureydata.category,
+        language:qureydata.language,
+        title:qureydata.title,
+        description:qureydata.description
+      }
+      var config = {
+  method: 'post',
+  url: 'http://localhost:3001/Qurey/create',
+  headers: { 
+    'accesstoken': '', 
+    'Content-Type': 'application/json'
+  },
+  data : data
+};

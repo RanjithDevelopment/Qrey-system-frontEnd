@@ -1,0 +1,16 @@
+
+.formcontainer{
+   margin-right: 50px;
+ margin-top: 50px;
+  justify-content: start;
+  border: none;
+}
+.imagecontainer{
+background-attachment: fixed;
+border: none;
+}
+.image{
+    
+    height: 650px;
+ width: 500px; 
+}
