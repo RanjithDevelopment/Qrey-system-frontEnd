@@ -13,7 +13,7 @@ import Image from "../images/loginimage.png";
 import Logo from "../images/logo.png";
 
 import jwt_decode from "jwt-decode";
-import Dashboard from "./Dasboard";
+
 function Login() {
     const navigate=useNavigate();
     let loginvalues = {
@@ -58,7 +58,7 @@ if(response){
    
    const token = localStorage.getItem("token");
    const existuser=jwt_decode(token);
-   existuser.role==="admin" ? navigate('/Dasboard' ): navigate('/Sidebar')
+   existuser.role==="admin" ? navigate('/Navbar' ): navigate('/Sidebar')
    
  
 }

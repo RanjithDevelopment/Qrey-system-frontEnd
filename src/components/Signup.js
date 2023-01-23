@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import "../css/signupStyles.css";
 import axios from 'axios';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
@@ -7,8 +8,9 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
+import Logo from "../images/logo.png";
 import { Link } from 'react-router-dom';
-
+import bgImg from "../images/bg image.jpg";
 function Signup() {
 
   let formvalues = {
@@ -64,12 +66,15 @@ role:formdata.role
   };
   return (
     <>
-
-
-      <div style={{ padding: "30px", marginLeft: "100px" }}>
-        <h2>Here you can Register Yourself</h2>
-
-        <Box
+      <div className="register">
+      <div >
+    <img  src={Logo}/>
+      </div> 
+     
+<div className="col-1">
+ 
+<h1>GUVI SIGNUP FORM</h1>
+<Box
           component="form"
           sx={{
             '& > :not(style)': { m: 1, width: '25ch' },
@@ -167,7 +172,13 @@ role:formdata.role
           </Button>
 
         </Box>
-      </div>
+</div>
+<div className="col-2">
+    <img src={bgImg} alt="" />
+</div>
+</div>
+       
+      
     </>
   );
 }

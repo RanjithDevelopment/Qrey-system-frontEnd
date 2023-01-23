@@ -20,26 +20,18 @@ border: 2px solid grey;
     margin-left: 40px;
     border-right: 3px solid skyblue;
 }
-.currentqurey{
-    margin-top: 60px;
-    border: 2px solid grey;
-    height: 600px;
-    width: 600px;
-    position: fixed;
-    text-align: center;
-}
-
 .qureyhead{
     margin-bottom: 0px;
     position: fixed;
 }
-.left_contianer{
-    height: 100px;
-    width: 100px;
+.recent-container{
+    position: fixed;
+    height: 50%;
+    width: 50%;
     border: 2px solid skyblue;
     border-radius: 10px;
-  
-    margin-top: 20px;
+     margin-top: 50px;
+   
 }
 .qustions{
   

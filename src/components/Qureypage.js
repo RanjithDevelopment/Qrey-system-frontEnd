@@ -22,7 +22,7 @@ function Querypage() {
       }
     });
     setResultData(apidata.data.reverse());
-   
+   console.log(resultData[0].QureyNO);
   }
   getData();
  },[]);
@@ -90,8 +90,23 @@ function Querypage() {
         </Grid>
         <Grid item xs={5} >
           
-          <h1 className="qureyhead">Your current qurey appear here
-          </h1>
+          <h1 className="qureyhead">Your current qurey appear here</h1>
+          <div className="recent-container">
+            <div className="content">
+              <h1 className="qustions">QureyNo :</h1>
+              <h3 className="answers">{resultData[0].QureyNO}</h3>
+              <hr></hr>
+              <h1 className="qustions">QureyTitle: </h1>
+              <h3 className="answers">{resultData[0].title}</h3>
+            <h1 className="qustions">
+              AssignedTo
+            </h1>
+                <h3 className="answers">{resultData[0].mentor}</h3>
+            
+                
+              
+            </div>
+          </div>
       
         </Grid>
       </Grid>

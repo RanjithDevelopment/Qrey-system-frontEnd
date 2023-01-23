@@ -5,8 +5,7 @@ import Signup from "./components/Signup";
 import Querypage from "./components/Qureypage";
 import Sidebar from "./components/Sidebar"
 import Createqurey from "./components/createQurey";
-import Adminpage from "./components/Adminpage";
-import Dashboard from "./components/Dasboard";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -19,8 +18,8 @@ function App() {
     <Route path='/Sidebar'element={<Sidebar/>}/>
     <Route path='/Qureypage' element={<Querypage/>}/>
      <Route path='/createQurey' element={<Createqurey/>}/>
-     <Route path='/Adminpage' element={<Adminpage/>}/>
-    <Route path='/Dasboard' element={<Dashboard/>}/>
+     <Route path='/Navbar' element={<Navbar/>}/>
+     
  </Routes>
  {/* <Sidebar>
   <Routes>
