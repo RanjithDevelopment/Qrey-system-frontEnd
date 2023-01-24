@@ -132,7 +132,7 @@ if(response){
                                     </Button>
 
                                     Don&apos;t have an account?
-                                    <Button component={Link} to="/Signup" size="large" variant='Outlined' color="info">
+                                    <Button component={Link} to="/Signup" size="large" variant='Outlined' color="info" style={{color:"black"}}>
                                         Sign UP!
                                     </Button>
 
