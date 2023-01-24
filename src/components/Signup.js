@@ -73,7 +73,7 @@ role:formdata.role
      
 <div className="col-1">
  
-<h1>GUVI SIGNUP FORM</h1>
+<h1 style={{color:"Black"}}>GUVI SIGNUP FORM</h1>
 <Box
           component="form"
           sx={{
