@@ -7,7 +7,7 @@ import Typography from '@mui/joy/Typography';
 import TextField from '@mui/joy/TextField';
 import Button from '@mui/joy/Button';
 import axios from "axios";
-import { Link,useNavigate } from 'react-router-dom';
+import { Link,NavLink,useNavigate } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Image from "../images/loginimage.png";
 import Logo from "../images/logo.png";
@@ -132,10 +132,11 @@ if(response){
                                     </Button>
 
                                     Don&apos;t have an account?
-                                    <Button component={Link} to="/Signup" size="large" variant='Outlined' color="info" style={{color:"black"}}>
+                                    <NavLink to="/Signup">
+                                    <button   size="large" className="btn btn-primary">
                                         Sign UP!
-                                    </Button>
-
+                                    </button>
+                                    </NavLink>
                                 </Sheet>
                             </main>
                         </CssVarsProvider>

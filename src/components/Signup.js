@@ -9,10 +9,10 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
 import Logo from "../images/logo.png";
-import { Link } from 'react-router-dom';
+import { Link,useNavigate} from 'react-router-dom';
 import bgImg from "../images/bg image.jpg";
 function Signup() {
-
+  const navigate=useNavigate();
   let formvalues = {
    
     firstname: "",
@@ -62,7 +62,7 @@ password:formdata.password,
 confrimpassword:formdata.confirmpassword,
 mobilenumber:formdata.mobilenumber,
 role:formdata.role
-});
+}).then(()=>navigate("/"));
   };
   return (
     <>
@@ -73,7 +73,7 @@ role:formdata.role
      
 <div className="col-1">
  
-<h1 style={{color:"Black"}}>GUVI SIGNUP FORM</h1>
+<h1 style={{color:"black"}}>GUVI SIGNUP FORM</h1>
 <Box
           component="form"
           sx={{

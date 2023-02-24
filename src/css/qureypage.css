@@ -1,6 +1,6 @@
 .showqureies{
-    
-    width: 100%;
+    height:fit-content;
+    width: 150%;
     display: flex;
     flex-direction: row;
     grid-gap: 16px;
@@ -21,24 +21,32 @@ border: 2px solid grey;
     border-right: 3px solid skyblue;
 }
 .qureyhead{
-    margin-bottom: 0px;
-    position: fixed;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: sticky;
 }
 .recent-container{
-    position: fixed;
-    height: 50%;
-    width: 50%;
-    border: 2px solid skyblue;
-    border-radius: 10px;
-     margin-top: 50px;
-   
+    background: #fff;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 20px 24px;
 }
+
 .qustions{
-  
+  color: black;
+  text-align: start;
     align-items:flex-start;
 }
 .answers{
-    color: aqua;
+    text-align: center;
+    color: grey;
+}
+button{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
 }
 
 /* .Selecbox{
