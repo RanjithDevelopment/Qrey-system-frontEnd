@@ -104,7 +104,7 @@ function Querypage() {
               <div className="content">
                 <h1 className="qustions">QureyNo :</h1>
 
-                <h3 className="answers">{resultData[0].QureyNO}</h3>
+                <h3 className="answers"></h3>
                 <hr></hr>
                 <h1 className="qustions">QureyTitle: </h1>
 
